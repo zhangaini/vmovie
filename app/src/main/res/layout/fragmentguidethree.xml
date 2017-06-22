@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/guidethree_imag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/guide_bg3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/guide_text3"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/go_second"
+        android:src="@mipmap/guide_button"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="100dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/guide_version"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="80dp"
+        />
+
+
+</FrameLayout>

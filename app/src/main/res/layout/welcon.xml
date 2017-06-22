@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.zhang.day03.WelconActivity">
+
+<android.support.v4.view.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/my_viewpager">
+
+</android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/viewpager_control"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="30dp"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/dot"
+            android:id="@+id/my_viewpager_radio_1"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_viewpager_radio_2"
+            android:button="@null"
+            android:drawableTop="@drawable/dot"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_viewpager_radio_3"
+            android:button="@null"
+            android:drawableTop="@drawable/dot"
+            />
+
+    </RadioGroup>
+</FrameLayout>

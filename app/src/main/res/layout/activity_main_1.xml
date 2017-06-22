@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--页面 分为二个部分
+    内容显示区域
+        Fragment
+        控制区域
+         -radiogroup
+         -基本控件
+
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_container"
+        >
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/my_viewpager"
+            >
+
+
+        </android.support.v4.view.ViewPager>
+
+
+
+    </FrameLayout>
+    <include
+        android:id="@+id/main_cover"
+        android:visibility="gone"
+        layout="@layout/activity_main_cover"/>
+
+</FrameLayout>

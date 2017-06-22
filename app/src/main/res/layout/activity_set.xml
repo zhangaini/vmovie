@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/activity_set_framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#000000">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/back_icon" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="设置"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_one"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/activity_set_framelayout"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="用户反馈"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="#aaaaaa" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout_one"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout_one"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="清除图片缓存"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="290dp"
+                    android:gravity="center"
+                    android:text="0.00B" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/arrows_r" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:background="#aaaaaa" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout_two"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/framelayout_one">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="播放设置"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/arrows_r" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:background="#aaaaaa" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout_three"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/framelayout_two">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="允许非WIFI网络下载"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/set_btn_selector"
+                    android:paddingTop="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:background="#aaaaaa" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout_four"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/framelayout_three">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="离线缓存路径设置"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="290dp"
+                    android:gravity="center"
+                    android:text="SD卡" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/arrows_r" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:background="#aaaaaa" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout_five"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/framelayout_four">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="给V电影评分"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/arrows_r" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:background="#aaaaaa" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout_six"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/framelayout_five">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="版本更新"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="210dp"
+                    android:gravity="center"
+                    android:text="V5.1.9(Build 170)" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/arrows_r" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/framelayout_six"
+                android:background="#f1f1f1" />
+
+            <FrameLayout
+                android:id="@+id/framelayout_seven"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/framelayout_six"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="分享给好友"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/arrows_r" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:background="#aaaaaa" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout_eight"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/framelayout_seven">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="给我投稿"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/arrows_r" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:background="#aaaaaa" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout_nine"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/framelayout_eight">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="关注微信公众号"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/arrows_r" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:background="#aaaaaa" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout_ten"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/framelayout_nine">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="加入用户QQ群"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/arrows_r" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:background="#aaaaaa" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout_eleven"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/framelayout_ten">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="关于我们"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/arrows_r" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:background="#aaaaaa" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout_twelve"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/framelayout_eleven">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="免责声明"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/arrows_r" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:background="#aaaaaa" />
+            </FrameLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

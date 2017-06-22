@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#000000"
+
+
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/open_cover"
+            android:layout_height="45dp"
+            android:src="@mipmap/home_side"
+            android:layout_margin="5dp"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/rigth_serch"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/home_search"
+            android:layout_margin="5dp"
+            />
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/my_zuixin"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="最新"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                />
+            <TextView
+                android:id="@+id/my_pindao"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="频道"
+                android:layout_marginLeft="80dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="#aaaaaa"
+                />
+            <View
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:background="#ffffff"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/my_indicator"
+
+
+                />
+        </FrameLayout>
+
+    </FrameLayout>
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/my_recyclerview"-->
+        <!--/>-->
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/my_viewpager"
+        />
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aaaaaaaa"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/slide_bg"
+        android:scaleType="fitXY"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/my_touxiang"
+            android:src="@mipmap/default_avatar"
+            android:layout_centerInParent="true"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="点击登录"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/my_touxiang"
+            android:layout_marginTop="4dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_touxiang_left_set"
+            android:src="@mipmap/side_set"
+            android:layout_toLeftOf="@+id/my_touxiang"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="35dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_touxiang_right_set"
+            android:src="@mipmap/side_message"
+            android:layout_toRightOf="@+id/my_touxiang"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="35dp"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_download"
+            android:src="@mipmap/video_lan_download"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的缓存"
+                android:textSize="10dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/my_like"
+            android:src="@mipmap/video_lan_collect"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="18dp"
+            />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的最爱"
+                android:textSize="10dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <RadioGroup
+
+        android:layout_marginTop="270dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:id="@+id/main_cotroller"
+        >
+
+        <RadioButton
+
+            android:id="@+id/index"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/controller_bg_selector"
+            android:button="@null"
+            android:drawableLeft="@drawable/index_selector"
+            android:drawablePadding="15dp"
+            android:paddingLeft="50dp"
+            android:text="首页"
+            android:textColor="@drawable/text_selector">
+
+        </RadioButton>
+
+        <RadioButton
+            android:paddingLeft="50dp"
+            android:id="@+id/series"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/seriers_selector"
+            android:drawablePadding="15dp"
+            android:text="系列"
+            android:textColor="@drawable/text_selector"
+            android:background="@drawable/controller_bg_selector"
+            >
+
+        </RadioButton>
+
+        <RadioButton
+            android:paddingLeft="50dp"
+            android:id="@+id/behind"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/behind_selector"
+            android:drawablePadding="15dp"
+            android:textColor="@drawable/text_selector"
+            android:background="@drawable/controller_bg_selector"
+            android:text="幕后">
+
+        </RadioButton>
+
+    </RadioGroup>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/side_close"
+        android:id="@+id/side_close"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        />
+
+
+</FrameLayout>

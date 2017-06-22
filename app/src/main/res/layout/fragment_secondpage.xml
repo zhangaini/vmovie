@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#000000"
+
+
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/open_cover"
+            android:layout_height="45dp"
+            android:src="@mipmap/home_side"
+            android:layout_margin="5dp"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/rigth_serch"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/home_search"
+            android:layout_margin="5dp"
+            />
+
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/my_xilie"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="系列"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+    </FrameLayout>
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/series_recyclerview"
+       />
+</LinearLayout>

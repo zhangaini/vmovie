@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+
+        <!--类似于一个FrameLayout的形势 使得白色被覆盖来只剩下左边的白条-->
+        <layer-list>
+            <item android:drawable="@color/white"/>
+            <item
+                android:left="4dp"
+                android:drawable="@color/gray">
+            </item>
+
+        </layer-list>
+
+
+
+        </item>
+</selector>
